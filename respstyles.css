@@ -1,0 +1,87 @@
+/* Navbar */
+
+
+@media (max-width: 1024px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  /* Welcome Section */
+
+  .welcome-section h1 {
+    font-size: 2rem;
+    padding-left: 30px;
+  }
+
+  .welcome-section > p {
+    font-size: 1.5rem;
+  }
+  .projects-section-header {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-title {
+    font-size: 1rem;
+    padding: 1rem 0.5rem;
+  }
+
+  #about{
+    padding-top: 70px;
+  }
+
+  #about h1{
+    font-size: 2.5rem;
+  }
+
+  #about p{
+    font-size: 1rem;
+    /* text-align: left; */
+    padding: 10px;
+  }
+
+  footer p{
+    padding: 0;
+    margin: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
